@@ -1,0 +1,25 @@
+{
+  "name": "read-npm-library",
+  "version": "1.0.0",
+  "description": "use cac todo",
+  "main": "cli.js",
+  "scripts": {
+    "start": "node ./cac/cli.js rename ./cac/add.js ./cac/dec.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swalTLi/read-npm-library.git"
+  },
+  "author": "link",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swalTLi/read-npm-library/issues"
+  },
+  "homepage": "https://github.com/swalTLi/read-npm-library#readme",
+  "dependencies": {
+    "cac": "^6.7.12",
+    "nodemon": "^2.0.18",
+    "yarn": "^1.22.19"
+  }
+}
