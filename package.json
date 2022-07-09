@@ -1,25 +1,24 @@
 {
-  "name": "read-npm-library",
-  "version": "1.0.0",
-  "description": "use cac todo",
-  "main": "cli.js",
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "start": "node ./cac/cli.js rename ./cac/add.js ./cac/dec.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest -w",
+    "coverage": "vitest run --coverage"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/swalTLi/read-npm-library.git"
-  },
-  "author": "link",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/swalTLi/read-npm-library/issues"
-  },
-  "homepage": "https://github.com/swalTLi/read-npm-library#readme",
   "dependencies": {
-    "cac": "^6.7.12",
-    "nodemon": "^2.0.18",
-    "yarn": "^1.22.19"
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "c8": "^7.11.3",
+    "jsdom": "^20.0.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vitest": "^0.17.1",
+    "vue-tsc": "^0.34.7"
   }
 }
